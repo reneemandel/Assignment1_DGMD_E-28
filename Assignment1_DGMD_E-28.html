@@ -1,19 +1,138 @@
-<!DOCTYPE html>
+<!-- Assignment 1, Renee Mandel -->
+<!-- URL: [Your GitHub Pages URL will go here] -->
+<!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Me!</title>
+        <style>
+            body {
+                font-family:Avenir,'Century Gothic',Arial,sans-serif;
+                max-width:60vw;
+                margin:30px auto;
+                padding:0 15px;
+                color:#3d2c52;
+                background:#faf9fc;
+            }
+            header {
+                text-align:center;
+                margin-bottom:24px;
+            }
+            h1 {
+                color:#4c306e;
+                font-size:2em;
+                margin-bottom:8px;
+            }
+            h2 {color:#8968ae;
+                font-size:1.3em;
+                margin:5px 5px 12px 0;
+            }
+            p {
+                line-height:1.6;
+                margin:8px 0;
+            }
+            img {
+                max-width:100%;
+                height:auto;
+                border-radius:12px;
+                box-shadow:0 4px 12px rgba(76,48,110,0.15);
+            }
+            ul {
+                margin:5px 0 15px 20px;
+                line-height:1.6;
+            }
+            a.button {
+                display:inline-block;
+                margin-top:5px;
+                padding:11px 18px;
+                background:linear-gradient(135deg, #b896d4 0%, #8968ae 100%);
+                color:#fff;
+                border-radius:20px;
+                text-decoration:none;
+                transition: transform 0.2s;
+            }
+            a.button:hover {
+                transform:scale(1.05);
+            }
+            footer {
+                margin: 30px 0;
+                text-align:center;
+                color:#fff;
+                background:#8968ae;
+                padding:15px;
+                border-radius:12px;
+                font-size:0.9rem;
+            }
+            .box {
+                background:#fff;
+                padding:20px;
+                border-radius:12px;
+                margin-top:15px;
+                box-shadow:0 2px 8px rgba(76,48,110,0.15);
+                transition:transform 0.2s;
+            }
+            .box:hover {
+                transform:translateY(-3px);
+                box-shadow:0 4px 15px rgba(76,48,110,0.2);
+            }
+
+            .box:nth-child(even) {
+                background:#f8f5fc;
+            }
+         </style>
     </head>
-<body>
-    <h1>About Me!
-    </h1>
-    <p><strong>First Name: </strong>Renee</p>
-    <p><strong>Where I grew Up: </strong>I grew up in Miami, Florida.</p>
-    <p><strong>My Major: </strong>I am getting an MLA in Digital Media Design</p>
-    <p><strong>Web Development Background: </strong>I design websites in Adobe Creative Suite and build them using WordPress, Divi, HTML, CSS, and PHP. I have also had to use elementor and other WP themes depending on what my client uses. I also took your WordPress Programming, Intro to Python, and Intro to Web Development.</p>
-    <p><strong>Software Development Background: </strong>Python and JavaScript. I am also taking Digital Media: From Ideas to Designs and Prototypes which will touch on many software development tools. I also took Wearable Devices and computer vision which had lots of python and work relating to sensors, AI, signal processing, data analytics, machine learning, computational image processing, neural networks, localization and mapping, and robust algorithms for modeling.</p>
-    <p><strong>Why I wanted to take this course: </strong>I wanted to take this course because I am very interested in web and software development and felt like it was the next step in my web design/development journey. I know all the fundamentals to create a website that is beautiful and performs well so now I am ready and excited to learn and start my journey with about web applications!</p>
-    <p><strong>My Favorite Place: </strong>Paris! I went last summer and I think about it every day.</p>
-    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80&auto=format&fit=crop" alt="The Eiffel Tower in Paris at sunset">
-    <p><strong>My Favorite Restaurant: </strong><a href="https://www.cafelucenyc.com/">Cafe Luce</a></p>
-</body>
-</html>
+    
+    <body>
+        <header>
+            <h1>About Me!</h1>
+        </header>
+    
+        <section class="box">
+            <p><strong>First name:</strong> Renee</p>
+            <p><strong>Where I grew up:</strong> Miami, Florida (but I live in NYC now)</p>
+            <p><strong>Major:</strong> MLA in Digital Media Design</p>
+          </section>
+      
+          <section class="box">
+            <h2>Web Development Background</h2>
+            <ul>
+              <li>I design websites in Adobe Creative Suite and build them using WordPress, Divi, HTML, CSS, and PHP</li>
+              <li>I have also had to use Elementor and other WP themes depending on what my client uses</li>
+              <li>I also took WordPress Programming, Intro to Python, and Intro to Web Development</li>
+            </ul>
+          </section>
+      
+          <section class="box">
+            <h2>Software Development Background</h2>
+            <ul>
+              <li>Python and JavaScript</li>
+              <li>I am also taking Digital Media: From Ideas to Designs and Prototypes which will touch on many software development tools</li>
+              <li>I also took Wearable Devices and computer vision which had lots of Python and work relating to sensors, AI, signal processing, data analytics, machine learning, computational image processing, neural networks, localization and mapping, and robust algorithms for modeling</li>
+            </ul>
+          </section>
+      
+          <section class="box">
+            <h2>Why I Wanted to Take This Course</h2>
+            <p>I wanted to take this course because I am very interested in web and software development and felt like it was the next step in my web design/development journey. I know all the fundamentals to create a website that is beautiful and performs well so now I am ready and excited to learn and start my journey with web applications!</p>
+          </section>
+      
+          <section class="box">
+            <h2>My Favorite Place</h2>
+            <p>Paris! I went last summer and I think about it every day.</p>
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80&auto=format&fit=crop" alt="The Eiffel Tower in Paris at sunset">
+          </section>
+      
+          <section class="box">
+            <h2>My Favorite Restaurant</h2>
+            <p>Cafe Luce! I go there every year for my birthday. They have the best homemade pasta.</p>
+            <p>
+              <a class="button" href="https://www.cafelucenyc.com/" >Visit Cafe Luce</a>
+            </p>
+          </section>
+      
+          <footer>
+            <p>Harvard DGMD E-28 | Assignment 1</p>
+          </footer>
+        </body>
+      </html>
